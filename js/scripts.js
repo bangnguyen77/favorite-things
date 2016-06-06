@@ -3,20 +3,15 @@
 
 $(document).ready(function() {
   $("#favoriteThings form").submit(function(event) {
-    var food = $("input#food").val();
-    var sports = $("input#sports").val();
-    var movie = $("input#movie").val();
-    var book = $("input#book").val();
-    var socialApp = $("input#socialApp").val();
-    var favoriteThings = ["food", sports, movie, book, socialApp];
+    var favoriteThings = ["food", "sports", "movie", "book", "socialApp"];
 
+    favoriteThings.forEach(function(favoriteThings) {
+      var userInput = $("input#" + favoriteThings).val();
+      $("." + favoriteThings).text(userInput);
+    });
+
+    $(".favoriteThings").show();
+
+    event.preventDefault();
   });
-  event.preventDefault();
 });
-// back-end logic
-$(".favoriteThings").append(function(favoriteThings) {
-$("#list").text();
-
-});
-
-var newArray=[]
