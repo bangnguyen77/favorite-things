@@ -8,12 +8,21 @@ $(document).ready(function() {
     favoriteThings.forEach(function(favoriteThings) {
       var userInput = $("input#" + favoriteThings).val();
       $("." + favoriteThings).text(userInput);
+      event.preventDefault();
     });
+    // var newArray= favoriteThings.splice(1,0,2);
+    // var newArray = [];
+    // newArray[0] = favoriteThings[1];
+    // newArray[1] = favoriteThings[0];
+    // newArray[2] = favoriteThings[2];
+    // var newArray = favoriteThings.map(function(favoriteThings) {
+    //   return favoriteThings[1,0,2]
+    // });
+    $(".favoriteThings").show(newArray);
 
-    $(".favoriteThings").show();
-    event.preventDefault();
 
-    var newArray =[favoriteThings[1,0,2]];
+
+
   });
   // , include code that builds a new array out of only the second, first and third elements of the first array, in that order.
 
