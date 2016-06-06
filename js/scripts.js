@@ -11,7 +11,15 @@ $(document).ready(function() {
     });
 
     $(".favoriteThings").show();
-
     event.preventDefault();
+
+    var newArray =[favoriteThings[1,0,2]];
   });
+  // , include code that builds a new array out of only the second, first and third elements of the first array, in that order.
+
+  // var newArray = [favoriteThings];
+  // $(newArray).show();
+
+// After that, use square bracket notation to access each element of the original array, and use the push() method to add these elements to the new array.
+
 });
